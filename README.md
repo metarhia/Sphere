@@ -57,6 +57,14 @@ Server-side platform operational approach:
 
 ## Feature list
 
+## Requirements and dependencies
+
+- Node.js v18.x or v20.x
+- Linux (tested on Fedora v36-38, CentOS v7-9)
+- Postgresql v11-16
+- OpenSSL v3 or later (optional, for https & wss)
+- [certbot](https://github.com/certbot/certbot) (recommended but optional)
+
 ## Usage
 
 ## License
