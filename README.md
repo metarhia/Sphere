@@ -36,20 +36,24 @@ Services (or subsystems) are components of an information system that can be dep
 
 ## Architectural principles
 
-- Isolation
-- Metaprogramming
-- Platform-agnistic in domain code
-- Layered architecture
-- Multiparadigm codebase
-- DSL
-- Contracts
-- Modularity
-- No system code in applications
-- Applied code needs to be simple and secure, so we use sandboxing with v8 isolated contexts, worker threads and javascript closures;
-- Domain code should be separated from system code; so we use DDD, layered (onion) architecture, DI, SOLID and GRASP principles, contract-based approach;
-- Impress supports stateful applications with RPC and client-session sticky to servers; microservices, centralized or distributed architecture;
-- No I/O is faster even than async I/O, so we hold state in memory, share it among multiple threads and use lazy I/O for persistent storage;
-- We use just internal trusted dependencies, no third-party npm packages; total Metarhia technology stack size is less than 2mb.
+Core architectural principles:
+
+- Isolation with IoC (Inversion of Control) and DI (Dependency Injection);
+- Metaprogramming (dynamic metamodel interpretation);
+- Platform-agnostic domain codebase;
+- Layered architecture (no system code in applications);
+- Multiparadigm programming and semantic code;
+- Wide use of DSL (Domain-Specific Languages);
+- Contract programming (defined with schemas);
+- Modularity with auto-binding (no dependency locators in domain code).
+
+Server-side platform operational approach:
+
+- Applied code must be simple and secure; hence, we use sandboxing with V8 isolated contexts, worker threads, and JavaScript closures for varying isolation layers;
+- Domain code is kept separate from system code using Domain-Driven Design (DDD), layered (onion) architecture, Dependency Injection (DI), SOLID, and GRASP principles, alongside a contract-based approach;
+- We support stateful applications with RPC and client-session sticky to servers;
+- No I/O is faster even than async I/O, therefore, we hold state in memory to share it across multiple threads, and use lazy I/O for persistent storage;
+- We rely solely on internal trusted dependencies, excluding third-party npm packages. The total size of the Metarhia technology stack is less than 2MB.
 
 ## Feature list
 
