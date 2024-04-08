@@ -12,6 +12,28 @@ It's widely acknowledged that that developing any corporate or government inform
 
 Consequently, every large-scale information system splits into two products: the platform and the system itself, often so closely linked that the platform cannot be easily reused or adapted for other challenges, acting simply as redundant protection against dependency instability. The best solution to these issues is the creation of platforms as a separate category of systems. This strategy allows for the separation of system tasks from product tasks, making repetitive infrastructure modules reusable. Such an approach not only optimizes development costs and significantly speeds up the process but also removes redundant tasks and ensures a higher standard of implementation. Enhancing the platform's functionalities by 15-25% has the potential to exponentially increase the scope of product deployment, potentially by hundreds of times. Additionally, configuring module settings through declarative code and domain-code (low-code) enhances the reusability of software components. This approach also facilitates their seamless integration via standardized software interfaces, aimed to unify platform modules.
 
+## Services
+
+Services (or subsystems) are components of an information system that can be deployed separately or in groups on servers. This differs from the concept of microservices, which entails complete isolation, including independent processes, servers, databases, and additional infrastructure; instead, it aligns more closely with Service-Oriented Architecture (SOA). The scale of services is determined by their functionality, which requires high cohesion; a service cannot be divided into parts, but can be distributed across multiple servers for clustering.
+
+- **Authentication, Authorization, and Accounting (AAA Service)**: manages user identities, access controls, user groups, group and individual right, sessions, data manipulation log.
+- **Logging and Monitoring (Audit Service)**: collects, stores, and analyzes logs for system health monitoring and debugging.
+- **Global Identifier Service**: issues globally unique identifiers for stored records and resolves queries by ID.
+- **Event Bus**: handles event-driven communication between subsystems for decoupling and asynchronous processing.
+- **Queue Subsystem**: manages message queues for inter-service communication, ensuring reliable data transfer.
+- **Configuration Management**: manages system settings and configurations, allowing for dynamic adjustments.
+- **Caching System**: improves performance by temporarily storing frequently accessed data.
+- **Notification Service**: handles the distribution of system-wide alerts, emails, and notifications.
+- **Reporting Service**: provides tools for creating, scheduling, and distributing custom reports.
+- **Batch Processing**: manages execution of batch jobs for data processing and maintenance tasks.
+- **Service Orchestration**: coordinates and manages service interactions, ensuring optimal workflow execution.
+- **Analytics and BI**: analyzes data to provide insights and support business intelligence initiatives.
+- **File Storage Service**: manages a distributed system for storing files with specified access rights and retention periods.
+- **Global Storage Service**: central to the system, it manages indexing, reactive cursors, and distributed queries.
+- **Cryptography Service**: handles encryption and digital signatures.
+- **Static Content Delivery**: organizes static files like JavaScript, HTML, CSS on a content delivery network (CDN).
+- **Business Logic Runner**: executes business processes, enforcing data access restrictions and logging user actions.
+
 ## Feature list
 
 ## Usage
