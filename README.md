@@ -57,6 +57,38 @@ Server-side platform operational approach:
 
 ## Feature list
 
+Sphere core functionality:
+
+Inherited from Metarhia:
+
+- **API auto-routing** calls to `endpoint` for rapid API development (no need to add routes manually);
+- **API concurrency**: request execution timeout and execution queue with both timeout and size limitations;
+- **Schemas** for API contract, data structures validation, and domain models;
+- **Application server** supports different API styles: RPC over AJAX and over Websocket, REST, and web hooks;
+- **Multiple protocols** support: HTTP, HTTPS, WS, WSS;
+- **Auto loader** with `start` hooks, namespace generation for code and dependencies;
+- **Live reload** of code through filesystem watch;
+- **Graceful shutdown** with `stop` hooks;
+- **Minimal dependencies** and reduced code size;
+- **Layered architecture**: api, domain logic, data access layer, and system code layer (hidden);
+- **Code sandboxing** for enhanced security and execution context isolation;
+- **Code protection**: reference pollution prevention, prototype pollution prevention;
+- **Multi-threading** for CPU utilization and execution isolation;
+- **Load balancing** for simple scaling with redirection to multiple ports;
+- **Caching**: in-memory caching for APIs and static files;
+- **Configuration**: environment-specific application settings;
+- **Database access** layer compatible with PostgreSQL with SQL-injection protection;
+- **Persistent sessions** with authentication, groups, and anonymous sessions;
+- **Buffered logging** (lazy write) with log rotation (keep logs N days) and console interface;
+- **Testing**: integrated node.js native test runner and table-test support;
+- **Inter-process** communication and shared memory used for state management;
+- **File utilities**: upload, download, support for partial content and streaming;
+- **Task Management**: scheduled task execution at specific intervals or certain times;
+- **Server health monitoring** (to be implemented);
+- **Database migrations** (to be implemented);
+- **State synchronization mechanism with transactions and subscription** (to be implemented);
+- **Multi-tenancy support** (to be implemented);
+
 ## Requirements and dependencies
 
 - Node.js v18.x or v20.x
