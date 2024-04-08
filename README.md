@@ -59,6 +59,34 @@ Server-side platform operational approach:
 
 Sphere core functionality:
 
+- API provisioning
+- Auto-generated browser UI
+- Auto-generated browser mobile UI
+- Automated and custom form generation
+- Grid-style database navigation
+- UI and data internationalization
+- Data validation
+- Report generation
+- Third-party system integration
+- Domain-logic execution
+- Contract-based data validation
+- Collaborative and interactive tools
+- Data analytics and business intelligence
+- Surveys and feedback collection
+- Query builder
+- Project management tools
+- Documents flow and storage
+- Registry engine
+- Chatbots integration
+- Mail delivery
+- Event planning
+- Asset management and resource planning
+- Personnel and customer database
+- Payment integration
+- AI and ML integration
+- Planning tools
+- Interactice chat and messaging
+
 Inherited from Metarhia:
 
 - **API auto-routing** calls to `endpoint` for rapid API development (no need to add routes manually);
